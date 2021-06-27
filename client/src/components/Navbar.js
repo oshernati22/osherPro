@@ -1,24 +1,42 @@
-import React, { Component } from 'react';
+import React, { Component,useEffect } from 'react';
 import {Link} from "react-scroll";
 import "./Navbar.scss";
 
+
 function Navbar()  {
-  
+  useEffect(() => {
+  func();
+  }, []);
+  const func = () =>  {
+    var checkbox = document.getElementById( 'navi-toogle' );
+    var listener = function( e ) {
+      if( e.target != checkbox) {
+        checkbox.checked = false;
+        document.removeEventListener( 'click', listener );
+      }
+    };
+    
+    checkbox.addEventListener( 'click', function(){
+      if( this.checked ) {
+        document.addEventListener( 'click', listener );
+      } 
+    });
+    };
         return (
-            
-            <div className="navigation">
+           
+           <div className="navigation">
             <input
               type="checkbox"
               className="navigation__checkbox"
               id="navi-toogle"/>
       
-            <label for="navi-toogle"  id="icon" className="navigation__button">
+            <label for="navi-toogle"   className="navigation__button">
               <span class="navigation__icon">&nbsp;</span>
             </label>
       
             <div className="navigation__background">&nbsp;</div>
       
-            <navigator className="navigation__nav">
+            <navigator id="icon"  className="navigation__nav">
               <ul className="navigation__list">
                 <li className="navigation__item">
                 <Link className= "navigation__link" activeClass="active" href="#"  to="main" spy={true} smooth={true} offset={-70}  duration={600}>Home</Link>
