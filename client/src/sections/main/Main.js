@@ -7,7 +7,7 @@ import { a, useTransition } from "@react-spring/web";
 //R3F
 import { Canvas, useFrame } from "react-three-fiber";
 // Deai - R3F
-import { useProgress, OrbitControls } from "drei";
+import { useProgress } from "drei";
 // React Springgg
 
 function Loader() {
