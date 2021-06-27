@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useState, useEffect } from 'react';
 import "./main.scss";
 import Boy from "./boy";
 import ThreeD from "./threeD"
@@ -17,16 +17,17 @@ import { Loader } from 'react-loaders'
 
 function Main() {
   const [isloading, setLoading] = useState(false);
-  const loader = () => {
+  useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 4000)
-  }
+  }, []);
+
   return (
     <div className="main-section" id="main">
       <h1 className="title">Osher Nati</h1>
-      <Loader type="pacman" />
+      {isloading ? <Loader type="pacman" /> : ""}
       <Canvas
         colorManagement
         shadowMap
