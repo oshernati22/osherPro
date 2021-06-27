@@ -10,6 +10,7 @@ import { Canvas, useFrame } from "react-three-fiber";
 import { useProgress } from "drei";
 // React Springgg
 
+
 function Loader() {
   const { active, progress } = useProgress();
   const transition = useTransition(active, {
@@ -82,7 +83,6 @@ function Main() {
           </Suspense>
         </group>
       </Canvas>
-      <Loader />
     </div>
 
   );
