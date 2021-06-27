@@ -1,5 +1,15 @@
 @import "src/App.scss";
+@import 'loaders.css/src/animations/pacman.scss';
 
+.loader-hidden {
+  display: none;
+}
+.loader-active {
+  position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
 .main-section {
 
   background: #2C3E50;  /* fallback for old browsers */

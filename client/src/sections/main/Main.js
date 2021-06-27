@@ -9,33 +9,24 @@ import { Canvas, useFrame } from "react-three-fiber";
 // Deai - R3F
 import { useProgress } from "drei";
 // React Springgg
+import { Loader } from 'react-loaders'
 
 
-function Loader() {
-  const { active, progress } = useProgress();
-  const transition = useTransition(active, {
-    from: { opacity: 1, progress: 0 },
-    leave: { opacity: 0 },
-    update: { progress },
-  });
-  return transition(
-    ({ progress, opacity }, active) =>
-      active && (
-        <a.div className='loading' style={{ opacity }}>
-          <div className='loading-bar-container'>
-            <a.div className='loading-bar' style={{ width: progress }}></a.div>
-          </div>
-        </a.div>
-      )
-  );
-}
+
 
 
 function Main() {
-
+  const [isloading, setLoading] = useState(false);
+  const loader = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000)
+  }
   return (
     <div className="main-section" id="main">
       <h1 className="title">Osher Nati</h1>
+      <Loader type="pacman" />
       <Canvas
         colorManagement
         shadowMap
