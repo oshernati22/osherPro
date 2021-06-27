@@ -1,63 +1,64 @@
-import React, { Component,useEffect } from 'react';
-import {Link} from "react-scroll";
+import React, { Component, useEffect } from 'react';
+import { Link } from "react-scroll";
 import "./Navbar.scss";
 
 
-function Navbar()  {
+function Navbar() {
   useEffect(() => {
-  func();
+    func();
   }, []);
-  const func = () =>  {
-    var checkbox = document.getElementById( 'navi-toogle' );
-    var listener = function( e ) {
-      if( e.target != checkbox) {
+  const func = () => {
+    var checkbox = document.getElementById('navi-toogle');
+    var icon = document.getElementById('navi-toogle span');
+    var listener = function (e) {
+      if (e.target != checkbox && e.target != icon) {
         checkbox.checked = false;
-        document.removeEventListener( 'click', listener );
+        document.removeEventListener('click', listener);
       }
     };
-    
-    checkbox.addEventListener( 'click', function(){
-      if( this.checked ) {
-        document.addEventListener( 'click', listener );
-      } 
+
+    checkbox.addEventListener('click', function () {
+      if (this.checked) {
+        document.addEventListener('click', listener);
+      }
     });
-    };
-        return (
-           
-           <div className="navigation">
-            <input
-              type="checkbox"
-              className="navigation__checkbox"
-              id="navi-toogle"/>
-      
-            <label for="navi-toogle"   className="navigation__button">
-              <span class="navigation__icon">&nbsp;</span>
-            </label>
-      
-            <div className="navigation__background">&nbsp;</div>
-      
-            <navigator id="icon"  className="navigation__nav">
-              <ul className="navigation__list">
-                <li className="navigation__item">
-                <Link className= "navigation__link" activeClass="active" href="#"  to="main" spy={true} smooth={true} offset={-70}  duration={600}>Home</Link>
-                </li>
-                <li className="navigation__item">
-                <Link className="navigation__link" activeClass="active" href="#"   to="about" spy={true} smooth={true} offset={-70}  duration={600}>About</Link>
-                </li>
-                <li className="navigation__item">
-                <Link className="navigation__link" activeClass="active" href="#" to="skills" spy={true} smooth={true} offset={-70}  duration={600}>Skills</Link>
-                </li>
-                <li className="navigation__item">
-                <Link className="navigation__link" activeClass="active" href="#"  to="projects" spy={true} smooth={true} offset={-70}  duration={600}>Projects</Link>
-                </li>
-                <li className="navigation__item">
-                <Link className="navigation__link" activeClass="active" href="#"  to="contact" spy={true} smooth={true} offset={-70}  duration={600}>Contacts</Link>
-                </li>
-                
-              </ul>
-            </navigator>
-            </div>
-        );
+  };
+  return (
+
+    <div className="navigation">
+      <input
+        type="checkbox"
+        className="navigation__checkbox"
+        id="navi-toogle" />
+
+      <label for="navi-toogle" className="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div className="navigation__background">&nbsp;</div>
+
+      <navigator id="icon" className="navigation__nav">
+        <ul className="navigation__list">
+          <li className="navigation__item">
+            <Link className="navigation__link" activeClass="active" href="#" to="main" spy={true} smooth={true} offset={-70} duration={600}>Home</Link>
+          </li>
+          <li className="navigation__item">
+            <Link className="navigation__link" activeClass="active" href="#" to="about" spy={true} smooth={true} offset={-70} duration={600}>About</Link>
+          </li>
+          <li className="navigation__item">
+            <Link className="navigation__link" activeClass="active" href="#" to="skills" spy={true} smooth={true} offset={-70} duration={600}>Skills</Link>
+          </li>
+          <li className="navigation__item">
+            <Link className="navigation__link" activeClass="active" href="#" to="projects" spy={true} smooth={true} offset={-70} duration={600}>Projects</Link>
+          </li>
+          <li className="navigation__item">
+            <Link className="navigation__link" activeClass="active" href="#" to="contact" spy={true} smooth={true} offset={-70} duration={600}>Contacts</Link>
+          </li>
+
+        </ul>
+      </navigator>
+    </div>
+  );
 }
 
 export default Navbar;
