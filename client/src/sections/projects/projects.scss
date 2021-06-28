@@ -39,7 +39,7 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+                background-image: linear-gradient(to right bottom, #f64f59, #c471ed, #12c2e9);
             }
 
             &-2 {
@@ -74,7 +74,7 @@
         
         &--1 {
             background-image: linear-gradient(to right bottom, transparent, transparent), 
-            url(./canbis.PNG);
+            url(./rebuy.PNG);
         }
 
         &--2 {
@@ -108,8 +108,8 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, 
-            rgba($color-secondary-light, .85), 
-            rgba($color-secondary-dark, .85));
+            rgba(#f64f59, .85), 
+            rgba(#c471ed, .85));
         }
 
         &--2 {

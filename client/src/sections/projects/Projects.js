@@ -18,17 +18,17 @@ class Projects extends Component {
                                 <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--1">
                                         &nbsp;
-                </div>
+                                    </div>
                                     <h4 className="card__heading">
-                                        <span className="card__heading-span card__heading-span--1">cannabis news website</span>
+                                        <span className="card__heading-span card__heading-span--1"> e commerce website</span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
-                                            <li>Tech : Html, Css, Bootstrap</li>
-                                            <li>Database : none</li>
-                                            <li> Year : 2018</li>
-                                            <li>Reason : for fun</li>
-                                            <li>Duration : 1 day </li>
+                                            <li>Tech :React.js, Node.js</li>
+                                            <li>Database : FIREBASE</li>
+                                            <li> Year : 2020</li>
+                                            <li>Reason : Final Project</li>
+                                            <li>Duration : 2 Month </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@ class Projects extends Component {
                                             <p className="card__price-only">Move TO</p>
                                             <p className="card__price-value">Project</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Click Here</a>
+                                        <a href="https://rebuy.netlify.app/" className="btn btn--white">Click Here</a>
                                     </div>
                                 </div>
                             </div>
@@ -48,13 +48,13 @@ class Projects extends Component {
                                 <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--2">
                                         &nbsp;
-                </div>
+                                    </div>
                                     <h4 className="card__heading">
                                         <span className="card__heading-span card__heading-span--2">flight boards website</span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
-                                        <li>Tech : Html,Css,JavaScript, Bootstrap,C#</li>
+                                            <li>Tech : Html,Css,JavaScript, Bootstrap,C#</li>
                                             <li>Database : SQL</li>
                                             <li> Year : 2019</li>
                                             <li>Reason : School</li>
@@ -78,13 +78,13 @@ class Projects extends Component {
                                 <div className="card__side card__side--front">
                                     <div className="card__picture card__picture--3">
                                         &nbsp;
-                </div>
+                                    </div>
                                     <h4 className="card__heading">
                                         <span className="card__heading-span card__heading-span--3">Investments website </span>
                                     </h4>
                                     <div className="card__details">
                                         <ul>
-                                        <li>Tech : Html,Css,JavaScript, Bootstrap,React.js,Node.js</li>
+                                            <li>Tech : Html,Css,JavaScript, Bootstrap,React.js,Node.js</li>
                                             <li>Database : MongoDB</li>
                                             <li> Year : 2020</li>
                                             <li>Reason : School</li>
@@ -105,7 +105,7 @@ class Projects extends Component {
                         </div>
                     </div>
                     <div className="u-center-text u-margin-top-big">
-                        <a href="https://github.com/oshernati22"target="_blank" className="btn btn--green">Discover all Projects</a>
+                        <a href="https://github.com/oshernati22" target="_blank" className="btn btn--green">Discover all Projects</a>
                     </div>
                 </section>
             </div>

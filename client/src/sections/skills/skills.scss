@@ -59,9 +59,10 @@
     color: transparent;
     -webkit-background-clip: text;
     @include respond(tab-port)  {
-        width: 10rem;
+        width: max-content;
         margin-left: 0;
-        font-size: 2rem;
+        font-size: 1rem;
+
     }
 
 }

@@ -92,6 +92,8 @@
     -webkit-background-clip: text;
     @include respond(tab-port)  {
         margin-left: 0;
+        width: max-content;
+        font-size: 1rem;
     }
 
 }
