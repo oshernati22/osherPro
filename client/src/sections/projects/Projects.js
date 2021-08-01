@@ -38,7 +38,7 @@ class Projects extends Component {
                                             <p className="card__price-only">Move TO</p>
                                             <p className="card__price-value">Project</p>
                                         </div>
-                                        <a href="https://rebuy.netlify.app/" className="btn btn--white">Click Here</a>
+                                        <a href="https://rebuy.netlify.app/" target="_blank" className="btn btn--white">Click Here</a>
                                     </div>
                                 </div>
                             </div>
@@ -68,7 +68,7 @@ class Projects extends Component {
                                             <p className="card__price-only">Move TO</p>
                                             <p className="card__price-value">Project</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Click Here</a>
+                                        <a target="_blank" href="https://github.com/oshernati22/FlightsBoard-website" className="btn btn--white">Click Here</a>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@ class Projects extends Component {
                                             <p className="card__price-only">Move To</p>
                                             <p className="card__price-value">Project</p>
                                         </div>
-                                        <a href="#" className="btn btn--white">Click Here</a>
+                                        <a target="_blank" href="https://github.com/oshernati22/Investock" className="btn btn--white">Click Here</a>
                                     </div>
                                 </div>
                             </div>

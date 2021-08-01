@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import "./footer.scss";
 import logo from "./logoOsher.png";
-import cv from "./osherCV.doc"
+import cv from "./Junior Software Developer- Osher Nati.pdf"
 function Footer() {
-    return (
-        <div>
-             <footer className="footer" id="footer">
+  return (
+    <div>
+      <footer className="footer" id="footer">
         <div className="footer__logo-box">
           <picture className="footer__logo">
             <img alt="Full logo" className="footer__logo" src={logo} />
-          </picture>     
+          </picture>
         </div>
         <div className="row">
           <div className="col-1-of-2">
@@ -26,16 +26,16 @@ function Footer() {
           </div>
           <div className="col-1-of-2">
             <p className="footer__copyright">
-            <p> <a href="#" className="footer__link">Tel</a> : +972509454441 </p>
-            <p> <a href="#" className="footer__link">Email</a> : oshernati22@gmail.com </p>
-            <p> <a href="#" className="footer__link">Institution</a> : College of Management Academic Studies</p>
-            <p>© 2021 Osher Nati - FullStack Devloper</p>
+              <p> <a href="#" className="footer__link">Tel</a> : +972509454441 </p>
+              <p> <a href="#" className="footer__link">Email</a> : oshernati22@gmail.com </p>
+              <p> <a href="#" className="footer__link">Institution</a> : College of Management Academic Studies</p>
+              <p>© 2021 Osher Nati - FullStack Devloper</p>
             </p>
           </div>
         </div>
       </footer>
-        </div>
-    );
+    </div>
+  );
 }
 
 export default Footer;
